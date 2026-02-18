@@ -6,7 +6,7 @@ export default function Footer() {
 			<div className='mx-auto max-w-7xl px-6 py-20 grid gap-12 md:grid-cols-4'>
 				{/* Brand */}
 				<div>
-					<h3 className='text-white text-lg font-semibold mb-4'>SilkRoad</h3>
+					<h3 className='text-white text-lg font-semibold mb-4'>Welcome Tour</h3>
 					<p className='text-sm leading-relaxed'>
 						Discover the timeless beauty of Uzbekistan with authentic, luxury travel experiences crafted for unforgettable
 						memories.
@@ -34,12 +34,20 @@ export default function Footer() {
 						</li>
 					</ul>
 				</div>
+				{/* newsletter */}
+				<div className='md:col-span-2'>
+					<h4 className='text-white font-medium mb-4'>Subscribe to our newsletter</h4>
+					<form className='flex gap-3'>
+						<input type='email' placeholder='Your email' className='px-4 py-2 rounded-xl bg-gray-800 text-white w-full' />
+						<button className='bg-white text-black px-6 rounded-xl'>Subscribe</button>
+					</form>
+				</div>
 
 				{/* Contact */}
 				<div>
 					<h4 className='text-white font-medium mb-4'>Contact</h4>
 					<ul className='space-y-2 text-sm'>
-						<li>Email: info@silkroad.uz</li>
+						<li>Email: welcometour@google.com</li>
 						<li>Phone: +998 90 123 45 67</li>
 						<li>Tashkent, Uzbekistan</li>
 					</ul>
@@ -64,7 +72,7 @@ export default function Footer() {
 
 			{/* Bottom */}
 			<div className='border-t border-gray-800 py-6 text-center text-xs text-gray-500'>
-				© {new Date().getFullYear()} SilkRoad. All rights reserved.
+				© {new Date().getFullYear()} Welcome Tour. All rights reserved.
 			</div>
 		</footer>
 	);
