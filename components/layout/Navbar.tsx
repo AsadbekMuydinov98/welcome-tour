@@ -1,11 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import NavLinks from './NavLinks';
+import MobileMenu from './MobileMenu';
+import {ThemeToggle} from '@/components/ui/theme-toggle';
 
 export default function Navbar() {
-	const pathname = usePathname();
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,8 +15,6 @@ export default function Navbar() {
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
-
-	const linkStyle = (path: string) => `transition ${pathname === path ? 'border-b-2 border-current pb-1' : 'hover:opacity-70'}`;
 
 	return (
 		<header
@@ -29,37 +28,16 @@ export default function Navbar() {
 				</Link>
 
 				<nav className='hidden md:flex items-center gap-10 text-sm font-medium'>
-					<Link href='/tours' className={linkStyle('/tours')}>
-						Tours
-					</Link>
-					<Link href='/about' className={linkStyle('/about')}>
-						About
-					</Link>
-					<Link href='/contact' className={linkStyle('/contact')}>
-						Contact
-					</Link>
+					<NavLinks />
+					<ThemeToggle />
 				</nav>
 
-				{/* Mobile Button */}
-				<button className='md:hidden' onClick={() => setMenuOpen(!menuOpen)}>
+				<button className='md:hidden' onClick={() => setMenuOpen(prev => !prev)}>
 					☰
 				</button>
 			</div>
 
-			{/* Mobile Menu */}
-			{menuOpen && (
-				<div className='md:hidden bg-white text-black px-6 py-6 space-y-4 shadow-lg'>
-					<Link href='/tours' className='block'>
-						Tours
-					</Link>
-					<Link href='/about' className='block'>
-						About
-					</Link>
-					<Link href='/contact' className='block'>
-						Contact
-					</Link>
-				</div>
-			)}
+			<MobileMenu open={menuOpen} />
 		</header>
 	);
 }
