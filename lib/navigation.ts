@@ -1,5 +1,5 @@
 export const NAV_LINKS = [
-	{ label: 'Tours', href: '/tours' },
-	{ label: 'About', href: '/about' },
-	{ label: 'Contact', href: '/contact' },
+	{ key: 'tours', href: '/tours' },
+	{ key: 'about', href: '/about' },
+	{ key: 'contact', href: '/contact' },
 ];

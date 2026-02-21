@@ -1,0 +1,91 @@
+{
+	"about": {
+		"title": "About Us",
+		"paragraph1": "We are a travel company specializing in cultural and historical tours across Uzbekistan.",
+		"paragraph2": "Our mission is to provide unforgettable experiences while maintaining high-quality service and local authenticity.",
+		"paragraph3": "With experienced guides and carefully planned itineraries, we ensure every journey becomes a lasting memory."
+	},
+	"nav": {
+		"tours": "Tours",
+		"about": "About",
+		"contact": "Contact"
+	},
+	"contact": {
+		"title": "Contact Us",
+		"email": "Email",
+		"phone": "Phone",
+		"address": "Address",
+		"namePlaceholder": "Your Name",
+		"emailPlaceholder": "Your Email",
+		"messagePlaceholder": "Your Message",
+		"button": "Send Message"
+	},
+	"tours": {
+		"title": "Our Tours"
+	},
+	"home": {
+		"hero": {
+			"title": "Discover the Beauty of Uzbekistan",
+			"subtitle": "Unforgettable journeys through history, culture and breathtaking landscapes"
+		},
+		"featuredTours": {
+			"title": "Featured Tours",
+			"viewAll": "View All"
+		},
+		"whyChooseUs": {
+			"title": "Why Choose Us",
+			"items": [
+				{
+					"title": "Authentic Experiences",
+					"description": "Carefully curated tours that showcase real culture and local traditions."
+				},
+				{
+					"title": "Professional Guides",
+					"description": "Experienced local experts with deep historical knowledge."
+				},
+				{
+					"title": "Premium Comfort",
+					"description": "Comfortable transport and handpicked accommodations."
+				},
+				{
+					"title": "24/7 Support",
+					"description": "Dedicated support team available throughout your journey."
+				}
+			]
+		}
+	},
+	"footer": {
+		"brand": {
+			"name": "Welcome Tour",
+			"description": "Discover the timeless beauty of Uzbekistan with authentic, luxury travel experiences crafted for unforgettable memories."
+		},
+		"quickLinks": {
+			"title": "Quick Links",
+			"links": [
+				{ "key": "tours", "href": "tours" },
+				{ "key": "about", "href": "about" },
+				{ "key": "contact", "href": "contact" }
+			]
+		},
+		"newsletter": {
+			"title": "Subscribe to our newsletter",
+			"placeholder": "Your email",
+			"button": "Subscribe"
+		},
+		"contact": {
+			"title": "Contact",
+			"items": ["Email: welcometour@google.com", "Phone: +998 90 123 45 67", "Tashkent, Uzbekistan"]
+		},
+		"social": {
+			"title": "Follow Us",
+			"links": [
+				{ "name": "Instagram", "href": "#" },
+				{ "name": "Facebook", "href": "#" },
+				{ "name": "YouTube", "href": "#" }
+			]
+		},
+		"bottom": {
+			"rights": "All rights reserved."
+		}
+	}
+}

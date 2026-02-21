@@ -4,15 +4,20 @@ import TourCard from '@/components/tour/TourCard';
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
 
-export default function FeaturedTours() {
+type FeaturedToursProps = {
+	dict: any;
+	locale: string;
+};
+
+export default function FeaturedTours({ dict, locale }: FeaturedToursProps) {
 	return (
 		<Section>
 			<Container>
 				<div className='flex justify-between items-center mb-12'>
-					<h2 className='text-3xl font-bold'>Featured Tours</h2>
+					<h2 className='text-3xl font-bold'>{dict.home.featuredTours.title}</h2>
 
-					<Link href='/tours' className='text-sm font-medium hover:underline'>
-						View All →
+					<Link href={`/${locale}/tours`} className='text-sm font-medium hover:underline'>
+						{dict.home.featuredTours.viewAll} →
 					</Link>
 				</div>
 

@@ -8,9 +8,9 @@ export function AdminHeader() {
 			</div>
 			<div className='flex items-center gap-4'>
 				{/* Keyin theme toggle qo‘shamiz */}
+				<ThemeToggle />
 				<div className='w-8 h-8 rounded-full bg-muted' />
 			</div>
-			<ThemeToggle />
 		</header>
 	);
 }

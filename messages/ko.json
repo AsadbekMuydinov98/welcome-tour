@@ -1,0 +1,91 @@
+{
+	"about": {
+		"title": "회사 소개",
+		"paragraph1": "우리는 우즈베키스탄 전역의 문화 및 역사 투어를 전문으로 하는 여행 회사입니다.",
+		"paragraph2": "우리의 목표는 높은 수준의 서비스와 현지의 진정성을 유지하면서 잊을 수 없는 경험을 제공하는 것입니다.",
+		"paragraph3": "경험 많은 가이드와 세심하게 계획된 일정으로 모든 여행을 오래도록 기억에 남는 순간으로 만듭니다."
+	},
+	"nav": {
+		"tours": "투어",
+		"about": "회사 소개",
+		"contact": "연락처"
+	},
+	"contact": {
+		"title": "문의하기",
+		"email": "이메일",
+		"phone": "전화번호",
+		"address": "주소",
+		"namePlaceholder": "이름",
+		"emailPlaceholder": "이메일",
+		"messagePlaceholder": "메시지",
+		"button": "메시지 보내기"
+	},
+	"tours": {
+		"title": "우리의 투어"
+	},
+	"home": {
+		"hero": {
+			"title": "우즈베키스탄의 아름다움을 발견하세요",
+			"subtitle": "역사와 문화, 그리고 숨막히는 풍경을 따라 떠나는 잊지 못할 여행"
+		},
+		"featuredTours": {
+			"title": "추천 투어",
+			"viewAll": "전체 보기"
+		},
+		"whyChooseUs": {
+			"title": "왜 우리와 함께 여행해야 할까요",
+			"items": [
+				{
+					"title": "진정한 현지 경험",
+					"description": "현지 문화와 전통을 깊이 있게 체험할 수 있도록 엄선된 투어."
+				},
+				{
+					"title": "전문 가이드",
+					"description": "풍부한 역사 지식을 갖춘 경험 많은 현지 전문가."
+				},
+				{
+					"title": "프리미엄 편안함",
+					"description": "편안한 교통수단과 엄선된 숙박 시설."
+				},
+				{
+					"title": "24시간 지원",
+					"description": "여행 내내 제공되는 전담 지원 서비스."
+				}
+			]
+		}
+	},
+	"footer": {
+		"brand": {
+			"name": "Welcome Tour",
+			"description": "진정성과 프리미엄 여행 경험을 통해 우즈베키스탄의 아름다움을 발견하세요."
+		},
+		"quickLinks": {
+			"title": "빠른 링크",
+			"links": [
+				{ "key": "tours", "href": "tours" },
+				{ "key": "about", "href": "about" },
+				{ "key": "contact", "href": "contact" }
+			]
+		},
+		"newsletter": {
+			"title": "뉴스레터 구독하기",
+			"placeholder": "이메일 주소",
+			"button": "구독"
+		},
+		"contact": {
+			"title": "연락처",
+			"items": ["Email: welcometour@google.com", "전화번호: +998 90 123 45 67", "타슈켄트, 우즈베키스탄"]
+		},
+		"social": {
+			"title": "팔로우하기",
+			"links": [
+				{ "name": "Instagram", "href": "#" },
+				{ "name": "Facebook", "href": "#" },
+				{ "name": "YouTube", "href": "#" }
+			]
+		},
+		"bottom": {
+			"rights": "모든 권리 보유."
+		}
+	}
+}

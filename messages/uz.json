@@ -1,0 +1,91 @@
+{
+	"about": {
+		"title": "Biz haqimizda",
+		"paragraph1": "Biz Oʻzbekiston boʻylab madaniy va tarixiy sayohatlarga ixtisoslashgan sayyohlik kompaniyasimiz.",
+		"paragraph2": "Bizning maqsadimiz — yuqori sifatli xizmat va mahalliy anʼanalarni saqlagan holda unutilmas tajribalar taqdim etish.",
+		"paragraph3": "Tajribali gidlar va puxta rejalashtirilgan marshrutlar bilan har bir sayohatni unutilmas xotiraga aylantiramiz."
+	},
+	"nav": {
+		"tours": "Sayohatlar",
+		"about": "Biz haqimizda",
+		"contact": "Bog‘lanish"
+	},
+	"contact": {
+		"title": "Bog‘lanish",
+		"email": "Email",
+		"phone": "Telefon",
+		"address": "Manzil",
+		"namePlaceholder": "Ismingiz",
+		"emailPlaceholder": "Email manzilingiz",
+		"messagePlaceholder": "Xabaringiz",
+		"button": "Xabar yuborish"
+	},
+	"tours": {
+		"title": "Bizning sayohatlar"
+	},
+	"home": {
+		"hero": {
+			"title": "O‘zbekiston go‘zalligini kashf eting",
+			"subtitle": "Tarix, madaniyat va betakror manzaralar bo‘ylab unutilmas sayohatlar"
+		},
+		"featuredTours": {
+			"title": "Mashhur sayohatlar",
+			"viewAll": "Barchasini ko‘rish"
+		},
+		"whyChooseUs": {
+			"title": "Nega biz bilan sayohat qilishadi",
+			"items": [
+				{
+					"title": "Haqiqiy tajribalar",
+					"description": "Mahalliy madaniyat va an’analarni namoyish etuvchi puxta tanlangan sayohatlar."
+				},
+				{
+					"title": "Professional gidlar",
+					"description": "Chuqur tarixiy bilimga ega tajribali mahalliy mutaxassislar."
+				},
+				{
+					"title": "Yuqori darajadagi qulaylik",
+					"description": "Qulay transport va sinchiklab tanlangan mehmonxonalar."
+				},
+				{
+					"title": "24/7 qo‘llab-quvvatlash",
+					"description": "Sayohat davomida doimiy yordam ko‘rsatuvchi maxsus jamoa."
+				}
+			]
+		}
+	},
+	"footer": {
+		"brand": {
+			"name": "Welcome Tour",
+			"description": "O‘zbekistonning betakror go‘zalligini haqiqiy va hashamatli sayohatlar orqali kashf eting."
+		},
+		"quickLinks": {
+			"title": "Tezkor havolalar",
+			"links": [
+				{ "key": "tours", "href": "tours" },
+				{ "key": "about", "href": "about" },
+				{ "key": "contact", "href": "contact" }
+			]
+		},
+		"newsletter": {
+			"title": "Yangiliklarga obuna bo‘ling",
+			"placeholder": "Email manzilingiz",
+			"button": "Obuna bo‘lish"
+		},
+		"contact": {
+			"title": "Bog‘lanish",
+			"items": ["Email: welcometour@google.com", "Telefon: +998 90 123 45 67", "Toshkent, O‘zbekiston"]
+		},
+		"social": {
+			"title": "Bizni kuzating",
+			"links": [
+				{ "name": "Instagram", "href": "#" },
+				{ "name": "Facebook", "href": "#" },
+				{ "name": "YouTube", "href": "#" }
+			]
+		},
+		"bottom": {
+			"rights": "Barcha huquqlar himoyalangan."
+		}
+	}
+}
