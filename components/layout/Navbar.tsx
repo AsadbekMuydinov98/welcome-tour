@@ -6,6 +6,7 @@ import NavLinks from './NavLinks';
 import MobileMenu from './MobileMenu';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { LanguageDropdown } from '../LanguageDropdown';
+import AuthModal from '../auth-modal/auth';
 
 type NavbarProps = {
 	dict: any;
@@ -25,7 +26,7 @@ export default function Navbar({ dict, locale }: NavbarProps) {
 	return (
 		<header
 			className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-				scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm text-black' : 'bg-transparent text-white'
+				scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm text-black' : 'bg-transparent text-black'
 			}`}
 		>
 			<div className='mx-auto max-w-7xl px-6 h-20 flex items-center justify-between'>
@@ -38,6 +39,7 @@ export default function Navbar({ dict, locale }: NavbarProps) {
 					<NavLinks dict={dict} locale={locale} />
 					<ThemeToggle />
 					<LanguageDropdown />
+					<AuthModal />
 				</nav>
 
 				<button className='md:hidden' onClick={() => setMenuOpen(prev => !prev)}>
