@@ -8,12 +8,12 @@ export default async function ToursPage({ params }: { params: Promise<{ locale: 
 	const dict = await getDictionary(locale);
 
 	return (
-		<section className='mx-auto max-w-7xl px-6 py-20'>
+		<section className='mx-auto max-w-5xl px-6 py-20'>
 			<h1 className='text-3xl font-bold mb-10'>{dict.tours.title}</h1>
 
-			<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+			<div className='flex flex-col gap-10'>
 				{tours.map(tour => (
-					<TourCard key={tour.id} tour={tour} />
+					<TourCard key={tour.id} tour={tour} locale={locale} variant='list' />
 				))}
 			</div>
 		</section>

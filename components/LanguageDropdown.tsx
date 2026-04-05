@@ -13,7 +13,9 @@ export function LanguageDropdown() {
 	const router = useRouter();
 
 	const segments = pathname.split('/');
-	const currentLocale = segments[1] as Locale;
+
+	// ✅ SAFE locale aniqlash
+	const currentLocale: Locale = locales.includes(segments[1] as Locale) ? (segments[1] as Locale) : 'en';
 
 	function changeLanguage(locale: Locale) {
 		const newSegments = [...segments];
@@ -31,21 +33,25 @@ export function LanguageDropdown() {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant='outline' className='flex gap-2'>
-					<span>{localeFlags[currentLocale] || '🌐'}</span>
-					<span>{currentLocale?.toUpperCase()}</span>
+				<Button variant='outline' className='flex items-center gap-2'>
+					<span>{localeFlags[currentLocale]}</span>
+					<span className='uppercase'>{currentLocale}</span>
 				</Button>
 			</DropdownMenuTrigger>
 
-			<DropdownMenuContent align='end' className='w-40'>
+			<DropdownMenuContent align='end' className='w-44'>
 				{locales.map(locale => (
-					<DropdownMenuItem key={locale} onClick={() => changeLanguage(locale)} className='flex items-center justify-between'>
+					<DropdownMenuItem
+						key={locale}
+						onClick={() => changeLanguage(locale)}
+						className='flex items-center justify-between cursor-pointer'
+					>
 						<div className='flex items-center gap-2'>
 							<span>{localeFlags[locale]}</span>
 							<span>{localeLabels[locale]}</span>
 						</div>
 
-						{currentLocale === locale && <Check className='w-4 h-4' />}
+						{currentLocale === locale && <Check className='w-4 h-4 text-primary' />}
 					</DropdownMenuItem>
 				))}
 			</DropdownMenuContent>
