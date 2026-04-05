@@ -1,5 +1,5 @@
-import { axiosClient } from '@/http/axios';
-import { ReturnActionType } from '@/types';
+import { axiosClient } from '@/app/http/axios';
+import { ReturnActionType } from '@/types/index';
 import { NextAuthOptions } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 

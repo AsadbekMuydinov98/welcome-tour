@@ -10,15 +10,17 @@ export default async function LocaleLayout({
 	children: React.ReactNode;
 	params: Promise<{ locale: string }>;
 }) {
-	const { locale } = await params; // 🔥 SHU YER MUHIM
+	const { locale } = await params;
 
-	const dict = await getDictionary(locale as Locale);
+	const safeLocale = locale as Locale;
+
+	const dict = await getDictionary(safeLocale);
 
 	return (
 		<>
-			<Navbar dict={dict} locale={locale} />
+			<Navbar dict={dict} locale={safeLocale} />
 			{children}
-			<Footer dict={dict} locale={locale} />
+			<Footer dict={dict} locale={safeLocale} />
 		</>
 	);
 }
